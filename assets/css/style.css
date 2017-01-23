@@ -8,13 +8,28 @@ Primary Style
   box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #d21772;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #eddba4;
+  font-size: 40px;
+}
+
 body{
   font-family: sans-serif;
   line-height: 1;
   margin: 0;
   width: 100%;
   height: 100%;
-  background: #002A32
+  background: #291d43
 }
 
 main {
@@ -27,6 +42,15 @@ body .cart-img{
   width: 5.5%;
   margin-left: 93.1vw;
   margin-top: 0.4vh;
+}
+
+footer {
+  background: #eddba4;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: block;
 }
 
 .ka-img {
@@ -106,3 +130,5 @@ body .cart-img{
   transform: translate(0);
   opacity: 1;
 }
+
+
