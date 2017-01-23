@@ -30,6 +30,10 @@
 	background: -o-linear-gradient(#f7eff0, #EBA6A9);
 }
 
+h2 {
+    text-align: center;
+}
+
 .close {
 	background: #606061;
 	color: #FFFFFF;
@@ -60,7 +64,6 @@
 
 th, td {
     padding: 10px;
-    border-bottom: 1px solid #000;
 }
 
 .item-name {
@@ -76,8 +79,13 @@ th, td {
 }
 
 .item-price {
-    padding-left: 0px;
     text-align: right;
+}
+
+.order-table-footer {
+    color: #2F4F4F;
+    border-top: 1px solid #2F4F4F;
+    border-bottom: 1px solid #2F4F4F;
 }
 
 .item-subtotal {
@@ -88,32 +96,14 @@ th, td {
     text-align: left;
 }
 
-.order-table-footer {
-    border-bottom: 10px;
+.item-order-total {
+    color: black;
+    text-align: left;
+    font-weight: bold;
 }
 
-/*.item-order-total th {
-    text-align: left;
-}*/
-
-/*.item-subtotal {
-    text-align: left;
+.item-order-price {
+    text-align: right;
+    color: black;
+    font-weight: bold;
 }
-
-.item-subtotal-price {
-    text-align: right;
-}*/
-
-/*.item-order-total td {
-    text-align: right;
-}*/
-
-/*.tr {
-   border: 1px solid black;
-   border-collapse: collapse;
-}*/
-/*
-th, td {
-    padding: 15px;
-    text-align: center;
-}*/
