@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Kart-ey Checkout</title>
+        <!--<link rel="stylesheet" href="assets/css/style.css">-->
+        <link rel="stylesheet" href="assets/css/modal.css">
+    </head>
+    <body>
+        <a href="#openModal">Open Modal</a>
+
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">&times;</a>
+                <h2>Checkout</h2>
+                <h3>Your Order:</h3>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th class="item-name">Item</th>
+                            <th class="item-quantity"></th>
+                            <th class="item-price">Total</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item-name">Chills</td>
+                            <td class="item-quantity">x 2</td>
+                            <td class="item-price">$ 20.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-name">Mini Chills</td>
+                            <td class="item-quantity">x 5</td>
+                            <td class="item-price">$ 15.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="order-table-footer">
+                        <tr>
+                            <td class="item-subtotal">Subtotal</td>
+                            <td class="item-quantity">7</td>
+                            <td class="item-price">$ 35.00</td>
+                        </tr>
+                        <tr>
+                            <td class="item-tax">Tax</th>
+                            <td class="item-quantity"></td>
+                            <td class="item-price">$ 0.10</td>
+                        </tr>
+                        <tr>
+                            <td class="item-order-total">Total</td>
+                            <td class="item-quantity"></td>
+                            <td class="item-price">$ 35.10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
