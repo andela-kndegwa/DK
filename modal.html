@@ -8,50 +8,34 @@
     </head>
     <body>
         <a href="#openModal">Open Modal</a>
-
         <div id="openModal" class="modalDialog">
             <div>
                 <a href="#close" title="Close" class="close">&times;</a>
-                <h2>Checkout</h2>
-                <h3>Your Order:</h3>
-                <table class="order-table">
-                    <thead>
-                        <tr>
-                            <th class="item-name">Item</th>
-                            <th class="item-quantity"></th>
-                            <th class="item-price">Total</th>
-                        <tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="item-name">Chills</td>
-                            <td class="item-quantity">x 2</td>
-                            <td class="item-price">$ 20.00</td>
-                        </tr>
-                        <tr>
-                            <td class="item-name">Mini Chills</td>
-                            <td class="item-quantity">x 5</td>
-                            <td class="item-price">$ 15.00</td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="order-table-footer">
-                        <tr>
-                            <td class="item-subtotal">Subtotal</td>
-                            <td class="item-quantity">7</td>
-                            <td class="item-price">$ 35.00</td>
-                        </tr>
-                        <tr>
-                            <td class="item-tax">Tax</th>
-                            <td class="item-quantity"></td>
-                            <td class="item-price">$ 0.10</td>
-                        </tr>
-                        <tr>
-                            <td class="item-order-total">Total</td>
-                            <td class="item-quantity"></td>
-                            <td class="item-order-price">$ 35.10</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <h2>Your total is $450</h2>
+                <form>
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                        E-mail:<br>
+                        <input type="email" name="email" placeholder="E-mail" value="mamakayai@example.com"><br>
+                        Full name:<br>
+                        <input type="text" name="fullname" required 
+                            placeholder="Full name as it appears on the card" value="Mama Kayai"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Card details:</legend>
+                        Card number:<br>
+                        <input type="password" name="cardnumber" required maxlength="16"
+                            placeholder="Card number" value="2744 2655 3488 8622"><br>
+                        Date of expirt (MM/YY):<br>
+                        <input type="text" name="date" required placeholder="MM/YY" value="03/20"><br>
+                        CVC:<br>
+                        <input type="text" name="cvc" required maxlength="3" placeholder="CVC" value="475"><br>
+                        Postal code:<br>
+                        <input type="text" name="zip" required maxlength="5" placeholder="Zip/Postal code" value="00100"><br>
+                        <input type="checkbox" name="register">Save this card for future purchases<br>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </body>
