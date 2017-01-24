@@ -187,9 +187,133 @@ footer {
   padding: 1.8em 7em;
 }
 
-#modal {
-  position: fixed;
+.modalDialog {
+	position: fixed;
   width: 100px;
   height: 100px;
-  background: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in; /* css3 transitions */
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #EBA6A9;
+	background: -moz-linear-gradient(#f7eff0, #EBA6A9);
+	background: -webkit-linear-gradient(#f7eff0, #EBA6A9);
+	background: -o-linear-gradient(#f7eff0, #EBA6A9);
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #002A32;
+}
+
+.close {
+	background: #002A32;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #F40076; }
+
+.data-form {
+    padding: 10px;
+}
+
+.section {
+    padding: 15px;
+    border: none;
+}
+
+.sub-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#email, #name, #number {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+}
+
+#date, #zip {
+    margin-bottom: 15px;
+    width: 95px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+
+#cvc {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 85px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1;  
+}
+
+/*.registration {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+}*/
+
+#submit-btn {
+    border-radius: 40px;
+    border: 1px solid #F40076;
+    margin: 2em 40vh;
+    padding: 1.2em 8em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background: #d21772;
+    text-transform: uppercase;
+    transition:padding .6s;
+}
+
+#submit-btn:hover {
+    padding: 1.2em 7em;
 }
