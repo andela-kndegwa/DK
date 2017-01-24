@@ -149,7 +149,7 @@ footer {
   top:35vh;
   left: 10vw;
   font-size: 15rem;
-  transform: translateX(-20vw);
+  transform: translateX(-50vw);
   transition: transform .6s, color 2.8s cubic-bezier(.57,1.1,.82,.52);
 }
 
