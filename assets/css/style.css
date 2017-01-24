@@ -17,11 +17,12 @@ header {
   background: #d21772;
 }
 
-h1 {
-  font-family: sans-serif;
-  color: #eddba4;
-  font-size: 40px;
-}
+// h1 {
+//   font-family: sans-serif;
+//   font-style: italic;
+//   color: #eddba4;
+//   font-size: 40px;
+// }
 
 body{
   font-family: sans-serif;
@@ -29,11 +30,16 @@ body{
   margin: 0;
   width: 100%;
   height: 100%;
-  background: #291d43
+  background: #291d43;
 }
 
 main {
   display: table;
+
+}
+
+.ka-header{
+  width: 200px;
 
 }
 
@@ -75,7 +81,7 @@ footer {
   position: absolute;
   height: 4px;
   width: 36px;
-  background-color: #F40076;
+  background-color: #291d43;
   transition: background .1s, transform .4s;
 }
 
