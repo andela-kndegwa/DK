@@ -27,7 +27,6 @@ header {
 body{
   font-family: 'Lato', sans-serif;
   color: #fff;
-  font-size: 20px;
   line-height: 1;
   margin: 0;
   width: 100%;
@@ -147,15 +146,16 @@ footer {
   text-align: center;
   z-index: 5;
   top:35vh;
-  left: 10vw;
-  font-size: 15rem;
-  transform: translateX(-20vw);
-  transition: transform .6s, color 2.8s cubic-bezier(.57,1.1,.82,.52);
+  left: 2vw;
+  font-size: 7rem;
+  transform: translateX(-50vw);
+  transition: transform .6s, color 2.8s cubic-bezier(.18,1.42,.54,1.09);
 }
 
 .nav-open .ka-dollar-sign {
   transform: translateX(0);
   color: green;
+  opacity: 0.8;
 }
 
 .item-container {
@@ -175,10 +175,21 @@ footer {
   padding: 1.8em 8em;
   text-decoration: none;
   border-radius: 40px;
-  /*border: 1px solid #fff;*/
   background-color: #d21772;
   color: #fff;
   text-transform: uppercase;
   line-height: 10px;
   font-weight: 400;
+  transition:padding .6s;
+}
+
+.item-container a:hover{
+  padding: 1.8em 7em;
+}
+
+#modal {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: #000;
 }
