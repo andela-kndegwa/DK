@@ -24,13 +24,14 @@
       <li>Mini Chills</li>
       <li>Respek</li>
       <li>Tea to sip</li>
-      <a href="#openModal">Checkout</a>
+      <a id="checkOutBtn"href="#openModal">Checkout</a>
     </ul>
   </nav>
   <div class="ka-dollar-sign"> $ <br> <span style="color:#EBA6A9;">8,000</span>
     <P style="font-size:1.5rem;color:white;">PAY YOUR ORDER.</P>
   </div>
   <!--For the modal.-->
+  <div class="openDiv">
   <div id="openModal" class="modalDialog">
       <div>
           <a href="#close" title="Close" class="close">&times;</a>
@@ -39,7 +40,7 @@
           <form class="data-form">
               <fieldset class="section">
                   <input type="email" id="email" name="email" placeholder="Email" value="mamakayai@example.com"><br>
-                  <input type="text" id="name" name="fullname" required 
+                  <input type="text" id="name" name="fullname" required
                       placeholder="Full name" value="Mama Kayai"><br>
                   <input type="password" id="number" name="cardnumber" required maxlength="16"
                       placeholder="Card number" value="2744 2655 3488 8622"><br>
@@ -55,6 +56,9 @@
           </form>
       </div>
   </div>
+
+</div>
+</div>
   <div class="overlay">
     <!--For the overlay.-->
   </div>

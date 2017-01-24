@@ -69,7 +69,7 @@ footer {
 
 .ka-trigger {
   position: fixed;
-  z-index: 4;
+  z-index: 9;
   white-space: nowrap;
   top: 30px;
   right:30px;
@@ -181,6 +181,7 @@ footer {
   line-height: 10px;
   font-weight: 400;
   transition:padding .6s;
+  z-index: 9
 }
 
 .item-container a:hover{
@@ -211,7 +212,7 @@ footer {
 
 .modalDialog > div {
 	width: 400px;
-	position: relative;
+	position: absolute;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
@@ -219,6 +220,12 @@ footer {
 	background: -moz-linear-gradient(#f7eff0, #EBA6A9);
 	background: -webkit-linear-gradient(#f7eff0, #EBA6A9);
 	background: -o-linear-gradient(#f7eff0, #EBA6A9);
+  transform: translateX(100%);
+  transition: transform .6s;
+}
+
+.openDiv .modalDialog {
+  transform: translateX(10vw);
 }
 
 h2, h3 {
@@ -292,7 +299,7 @@ h2, h3 {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    line-height: 1;  
+    line-height: 1;
 }
 
 /*.registration {
@@ -302,10 +309,11 @@ h2, h3 {
 }*/
 
 #submit-btn {
+    position: relative;
     border-radius: 40px;
     border: 1px solid #F40076;
-    margin: 2em 40vh;
-    padding: 1.2em 8em;
+    margin: 2em 10vh;
+    padding: 1.2em 5em;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -317,3 +325,20 @@ h2, h3 {
 #submit-btn:hover {
     padding: 1.2em 7em;
 }
+
+/*.overlay {
+  display: block;
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 8;
+  opacity:0;
+  transition: opacity .6s;
+}*/
+
+/*.nav-open .overlay  {
+  opacity: 0.7
+}*/
