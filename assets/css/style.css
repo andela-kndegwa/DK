@@ -182,3 +182,15 @@ footer {
   line-height: 10px;
   font-weight: 400;
 }
+
+.item-container li>div>img {
+  border-radius: 50%;
+  width: 3em;
+  border: #291d43 .1em solid;
+}
+
+.item-name {
+  color: #ffffff;
+  padding-top: 1em;
+  width: 30%;
+}
