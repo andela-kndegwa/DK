@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Kart-ey Checkout</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/modal.css">
+    </head>
+    <body>
+        <a href="#openModal">Open Modal</a>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">&times;</a>
+                <h2>Your total is $450</h2>
+                <form>
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                        E-mail:<br>
+                        <input type="email" name="email" placeholder="E-mail" value="mamakayai@example.com"><br>
+                        Full name:<br>
+                        <input type="text" name="fullname" required 
+                            placeholder="Full name as it appears on the card" value="Mama Kayai"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Card details:</legend>
+                        Card number:<br>
+                        <input type="password" name="cardnumber" required maxlength="16"
+                            placeholder="Card number" value="2744 2655 3488 8622"><br>
+                        Date of expirt (MM/YY):<br>
+                        <input type="text" name="date" required placeholder="MM/YY" value="03/20"><br>
+                        CVC:<br>
+                        <input type="text" name="cvc" required maxlength="3" placeholder="CVC" value="475"><br>
+                        Postal code:<br>
+                        <input type="text" name="zip" required maxlength="5" placeholder="Zip/Postal code" value="00100"><br>
+                        <input type="checkbox" name="register">Save this card for future purchases<br>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
