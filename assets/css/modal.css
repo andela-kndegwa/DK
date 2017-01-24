@@ -30,12 +30,16 @@
 	background: -o-linear-gradient(#f7eff0, #EBA6A9);
 }
 
-h2 {
+h2, h3 {
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #002A32;
 }
 
 .close {
-	background: #606061;
+	background: #002A32;
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
@@ -55,55 +59,77 @@ h2 {
 
 .close:hover { background: #F40076; }
 
-.order-table {
-    margin-left: 25px;
-    width: 80%;
-    padding: 10px;
-    border-collapse: collapse;
-}
-
-th, td {
+.data-form {
     padding: 10px;
 }
 
-.item-name {
-    text-align: left;
+.section {
+    padding: 15px;
+    border: none;
 }
 
-.item-quantity {
+.sub-details {
     text-align: center;
+    margin-top: 10px;
 }
 
-.currency {
-    text-align: right;
+#email, #name, #number {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
 }
 
-.item-price {
-    text-align: right;
+#date, #zip {
+    margin-bottom: 15px;
+    width: 95px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1;
 }
 
-.order-table-footer {
-    color: #2F4F4F;
-    border-top: 1px solid #2F4F4F;
-    border-bottom: 1px solid #2F4F4F;
+#cvc {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 85px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1;  
 }
 
-.item-subtotal {
-    text-align: left;
+#check {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    color: #002A32;
 }
 
-.item-tax {
-    text-align: left;
+.registration {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 1;
 }
 
-.item-order-total {
-    color: black;
-    text-align: left;
+#submit-btn {
+    border-radius: 40px;
+    margin: 2em 40vh;
+    padding: 1.2em 8em;
     font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #d21772;
+    text-transform: uppercase;
 }
 
-.item-order-price {
-    text-align: right;
-    color: black;
-    font-weight: bold;
+#submit-btn:hover {
+    border: 1px solid #F40076;
 }
